@@ -26,10 +26,10 @@
     cursor: pointer;
 }
 .btn{
-    background-color: slategray;
-    padding: 5px;
+    background-color: whitesmoke;
+    padding: 6px;
     color: black;
-    width: 100px;
+    width: 110px;
 }
 .title{
     flex: 1;
