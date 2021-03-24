@@ -1,0 +1,38 @@
+.container{
+    width: 800px;
+    margin: auto;
+}
+.header {
+    background-color:slategray ;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    border: 1px solid #000000;
+    font-size: 30px;
+
+}
+.todo {
+    display: flex;
+    font-size: 20px;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: azure;
+    border: 1px solid #000000;
+
+
+}
+.like{
+    color: orange;
+    cursor: pointer;
+}
+.btn{
+    background-color: slategray;
+    padding: 5px;
+    color: black;
+    width: 100px;
+}
+.title{
+    flex: 1;
+    margin: 3px 5px ;
+
+}
