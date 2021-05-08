@@ -21,18 +21,18 @@
 
 
 }
-.like{
-    color: orange;
-    cursor: pointer;
-}
+
 .btn{
     background-color: whitesmoke;
     padding: 6px;
     color: black;
-    width: 110px;
+    width: 115px;
 }
 .title{
     flex: 1;
     margin: 3px 5px ;
 
+}
+.check{
+    margin-top: 10px;
 }

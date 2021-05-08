@@ -23,4 +23,22 @@ export const deleteTodo = (id) => {
                     type: 'delete', payload: id })
             })
     }
+};
+export const checkTodo = (id, completed) => {
+    return function (dispatch){
+        fetch(`https://jsonplaceholder.typicode.com/posts/${id}`,{
+            method: 'PATCH',
+            body: JSON.stringify({completed: !completed}),
+            headers: {
+                "Content-type": "application/json"
+            }
+        })
+            .then((response) => response.json())
+            .then(() => {
+                dispatch({
+                    type: "check",
+                    payload: id
+                })
+            })
+    }
 }

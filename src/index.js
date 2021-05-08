@@ -14,7 +14,7 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'show' :
+        case 'start' :
             return {
                 ...state,
                 loading: true };
@@ -23,6 +23,19 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 todos: action.payload,
                 loading: false };
+        case 'check' :
+            return {
+                ...state,
+                 todos: state.todos.map((todo) => {
+                     if (todo.id === action.payload){
+                         return{
+                             ...todo,
+                             completed: !todo.completed
+                         }
+                     }
+                     return todo;
+                 })
+            }
         case 'delete' :
             return {
                 ...state,
